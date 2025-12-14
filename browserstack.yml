@@ -1,0 +1,16 @@
+userName: sachingadekar_ivA6Hq
+accessKey: snTZjrTsQCwNTQTq2C6r
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: latest
+  - os: OS X
+    osVersion: Monterey
+    browserName: Safari
+    browserVersion: 15.6
+  - deviceName: Samsung Galaxy S22 Plus
+    osVersion: 12.0
+    browserName: chrome
+    deviceOrientation: portrait
+browserstackLocal: true
