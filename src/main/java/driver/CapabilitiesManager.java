@@ -90,7 +90,7 @@ public class CapabilitiesManager {
         if (bsUser != null) bstackOptions.setCapability("userName", bsUser);
         if (bsKey != null) bstackOptions.setCapability("accessKey", bsKey);
         bstackOptions.setCapability("project", "Mobile_Automation_Practice");
-        bstackOptions.setCapability("build", System.getProperty("BUILD_NAME", "local-build"));
+//        bstackOptions.setCapability("build", System.getProperty("BUILD_NAME", "local-build"));
         bstackOptions.setCapability("sessionName", "Automation Test");
 
         if (platformName.equalsIgnoreCase("android")) {

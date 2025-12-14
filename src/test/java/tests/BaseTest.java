@@ -9,13 +9,17 @@ import org.testng.annotations.Listeners;
 
 import utils.ArtifactManager;
 import hooks.TestListener;
+import utils.ConfigReader;
 
 @Listeners(TestListener.class)
 public class BaseTest {
 
     @Parameters({"platform"})
     @BeforeMethod(alwaysRun = true)
-    public void setUp(String platform, ITestResult result) {
+    public void setUp(String platform) {
+        if (platform == null || platform.isEmpty()) {
+            platform = ConfigReader.get("platformName");
+        }
         DriverFactory.createDriver(platform);
     }
 

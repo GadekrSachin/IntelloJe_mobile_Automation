@@ -29,6 +29,7 @@ public class DriverFactory {
                 String bsKey = ConfigReader.get("bs_key");
                 if (bsUser != null && bsKey != null && !bsUser.isEmpty() && !bsKey.isEmpty()) {
                     serverUrl = "https://" + bsUser + ":" + bsKey + "@hub-cloud.browserstack.com/wd/hub";
+//                    System.out.println("serverUrl......."+ serverUrl);
                 } else {
                     throw new RuntimeException("BrowserStack runMode requires bs_user and bs_key to be set (system props or config.properties)");
                 }
