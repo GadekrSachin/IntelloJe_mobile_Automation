@@ -5,7 +5,7 @@
     <parameter name="platform" value="Android"/>
     <test name="Mobile Tests">
         <classes>
-            <class name="tests.LoginTest"/>
+            <class name="runners.CucumberTestRunner"/>
         </classes>
     </test>
 
